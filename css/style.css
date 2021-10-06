@@ -1,0 +1,148 @@
+* {
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+    color: white;
+}
+body {
+    background-color: #0D1323;
+    width: 100%;
+    height: 100vh
+}
+.container
+{
+    padding: 30px ;
+    width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,23%);
+    grid-template-rows: repeat(2,50%);
+    gap: 30px;
+    padding-top: 80px;
+}
+
+.container > div {
+    border-radius: 20px;
+    padding: 20px;
+
+}
+.container .about{
+   grid-row: span 2;
+   padding: 0px;
+   
+}
+.about
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #1D204B;
+}
+.about img {
+    width: 30%;
+}
+.information {
+    display: flex;
+    flex-direction: column;
+    background: #5746EA;
+    padding: 20px;
+    border-radius: 20px;
+    height: 70%;
+}
+.article {
+    padding: 20px 0px;
+}
+.article h2 {
+    font-size: 40px;
+}
+.times
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+.div
+{   position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.first {
+    background-color: #FF8B64;
+}
+.div .image
+{
+    position: absolute;
+    top: -5px;
+    right: 0px; 
+}
+.div .info
+{   
+    background-color: #1D204B;
+    position: absolute;
+    top: 20%;
+    left: 0px;
+    width: 100%;
+    height: 100%; padding: 20px;
+    transition: all ease-in 0.3s;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+}
+.info .span1 {
+    padding: 5px 0px;
+}
+.info .span2 {
+    font-size: 30px;
+    padding: 5px;
+}
+.info:hover{
+    top: 0px;
+}
+.second {
+    background-color: #56C2E6;
+}
+.third
+{
+    background-color: #FF5E7D;
+}
+.fourth {
+background-color: #4BCF82;
+}
+.fifth {
+    background-color: #7334D1;
+}
+.sixth {
+    background-color: #F1C75B;
+}
+@media screen and (max-width:768px) {
+    .container
+{   
+    padding: 10px;
+    width: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    align-items: center;
+    justify-content: center;
+
+}
+.about
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #1D204B;
+    width: 90%;
+}
+.div
+{   position: relative;
+    width: 90%;
+    overflow: hidden;
+    height: 200px;
+    padding-top: 20px;
+
+}
+}
